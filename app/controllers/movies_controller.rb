@@ -15,7 +15,8 @@ class MoviesController < ApplicationController
     if ! @checked == nil
       @movies = Movie.find_by_rating(@checked.keys)
     else
-      @movies = Movie.all
+      @movies = Movie.order(params[:order])
+      # @movies = Movie.all
     end 
 
 
