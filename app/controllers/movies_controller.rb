@@ -7,8 +7,18 @@ class MoviesController < ApplicationController
   end
 
   def index
+    
     @order = params[:order]
     @movies = Movie.order(params[:order])
+    @all_ratings = Movie.uniq.pluck(:rating)
+    @checked = params[:ratings]
+    if ! @checked == nil
+      @movies = Movie.find_by_rating(@checked.keys)
+    else
+      @movies = Movie.all
+    end 
+
+
     # @movies = Movie.all
   end
 
