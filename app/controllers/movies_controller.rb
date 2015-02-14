@@ -6,24 +6,26 @@ class MoviesController < ApplicationController
     # will render app/views/movies/show.<extension> by default
   end
 
+  
   def index
-    
-    @order = params[:order]
-    # @movies = Movie.order(params[:order])
-    # Movies.order(params[:order]).find_all_by_rating(@checked.keys)
-    # @all_ratings = Movie.uniq.pluck(:rating)
+    @new_order = params[:order].present?
+    @new_filter = params[:ratings].present?
     @all_ratings = Movie.all_ratings
-    # @checked = Movie.all_ratings
-    @checked = (params[:ratings].present? ? params[:ratings] : @all_ratings)
-    @movies = Movie.order(params[:order])
-    @movies = (params[:ratings].present? ? @movies.find_all_by_rating(@checked.keys) : @movies)
+    if @new_order
+      session[:order] = params[:order]
+    end 
+    if session[:ratings] == nil 
+      session[:ratings] = @all_ratings
+    end 
+    if @new_filter 
+      session[:ratings] = params[:ratings].keys
+    end 
 
-    # @movies = (params[:order].present? ? @movi.sort_by {'&:' + params[:order]} : @movi )
-      # @movies = Movie.all
-    # end 
+    @checked =  session[:ratings]
+    @movies = Movie.order(session[:order])
 
+    @movies =  @movies.find_all_by_rating(@checked) 
 
-    # @movies = Movie.all
   end
 
   def new
