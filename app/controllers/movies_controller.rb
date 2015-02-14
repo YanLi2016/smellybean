@@ -9,15 +9,18 @@ class MoviesController < ApplicationController
   def index
     
     @order = params[:order]
+    # @movies = Movie.order(params[:order])
+    # Movies.order(params[:order]).find_all_by_rating(@checked.keys)
+    # @all_ratings = Movie.uniq.pluck(:rating)
+    @all_ratings = Movie.all_ratings
+    # @checked = Movie.all_ratings
+    @checked = (params[:ratings].present? ? params[:ratings] : @all_ratings)
     @movies = Movie.order(params[:order])
-    @all_ratings = Movie.uniq.pluck(:rating)
-    @checked = params[:ratings]
-    if ! @checked == nil
-      @movies = Movie.find_by_rating(@checked.keys)
-    else
-      @movies = Movie.order(params[:order])
+    @movies = (params[:ratings].present? ? @movies.find_all_by_rating(@checked.keys) : @movies)
+
+    # @movies = (params[:order].present? ? @movi.sort_by {'&:' + params[:order]} : @movi )
       # @movies = Movie.all
-    end 
+    # end 
 
 
     # @movies = Movie.all
@@ -25,6 +28,7 @@ class MoviesController < ApplicationController
 
   def new
     # default: render 'new' template
+    # @checked = Movie.all_ratings
   end
 
   def create
