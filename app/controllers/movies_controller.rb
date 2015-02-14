@@ -20,17 +20,20 @@ class MoviesController < ApplicationController
     if @new_filter 
       session[:ratings] = params[:ratings].keys
     end 
-
     @checked =  session[:ratings]
+    @order = session[:order]
+    # if ! @new_filter || ! @new_order
+    #   @checked =  session[:ratings]
+    #   redirect_to(movies_path(:order => session[:order], :ratings => session[:ratings]))
+    # else
     @movies = Movie.order(session[:order])
-
     @movies =  @movies.find_all_by_rating(@checked) 
-
+    # end 
+    
   end
 
   def new
     # default: render 'new' template
-    # @checked = Movie.all_ratings
   end
 
   def create
