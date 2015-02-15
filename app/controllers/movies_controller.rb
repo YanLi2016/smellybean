@@ -14,7 +14,7 @@ class MoviesController < ApplicationController
     @session_ratings = session[:ratings].present?
     @all_ratings = Movie.all_ratings
     @redirect = false 
-   
+    debugger 
     if @new_order
       session[:order] = params[:order]
     elsif @session_order
@@ -22,23 +22,26 @@ class MoviesController < ApplicationController
     end 
     
     if session[:ratings] == nil
-      session[:ratings] = @all_ratings
-      # @order = Hash.new()
-      # @all_ratings.each{|rating| @order[rating] = 1}
-      # session[:ratings] = @order
+      
+      @init_hash = Hash.new()
+      @all_ratings.each{|rating| @init_hash[rating] = 1}
+      session[:ratings] = @init_hash
+      
     elsif @new_filter 
-      session[:ratings] = params[:ratings].keys
+        
+      session[:ratings] = params[:ratings]
+        
     elsif @session_ratings
       redirect = true 
     end 
-    @checked = session[:ratings]
-    @order = session[:order]
     if redirect
-      @checked = session[:ratings]
+      
       redirect_to(movies_path(:order => session[:order], :ratings => session[:ratings]))
+    else 
+      @checked = session[:ratings].keys
+      @movies = Movie.order(session[:order])
+      @movies =  @movies.find_all_by_rating(@checked) 
     end 
-    @movies = Movie.order(session[:order])
-    @movies =  @movies.find_all_by_rating(@checked) 
     # end 
     
   end
