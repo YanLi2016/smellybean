@@ -35,10 +35,11 @@ class MoviesController < ApplicationController
       redirect = true 
     end 
     if redirect
-      
+     
       redirect_to(movies_path(:order => session[:order], :ratings => session[:ratings]))
     else 
-      @checked = session[:ratings].keys
+      @checked = session[:ratings].keys 
+      @order = session[:order]
       @movies = Movie.order(session[:order])
       @movies =  @movies.find_all_by_rating(@checked) 
     end 
