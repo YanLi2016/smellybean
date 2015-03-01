@@ -9,11 +9,19 @@
   %li
     Released on:
     = @movie.release_date.strftime("%B %d, %Y")
+  %li 
+    Director:
+    = @movie.director
 
 %h3 Description:
 
 %p#description= @movie.description
-
+= link_to 'Find Movies With Same Director', show_director_path(@movie)
+/ - if @movie.director.nil? || @movie.director.empty?
+/   -flash[:warning] = "'#{@movie.title}' has no director info."
+/   = link_to 'Find Movies With Same Director', movies_path
+/ - else
+/   = link_to 'Find Movies With Same Director', show_director_path(@movie)
 = link_to 'Edit', edit_movie_path(@movie)
 = button_to 'Delete', movie_path(@movie), :method => :delete, :confirm => 'Are you sure?'
 = link_to 'Back to movie list', movies_path

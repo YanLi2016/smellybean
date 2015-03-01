@@ -1,0 +1,186 @@
+Searching 111 files for "Rottenpotatos"
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config.ru:
+    2  
+    3  require ::File.expand_path('../config/environment',  __FILE__)
+    4: run Rottenpotatos::Application
+    5  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/Find Results:
+  120      5  require File.expand_path('../config/application', __FILE__)
+  121      6  
+  122:     7: Rottenpotatos::Application.load_tasks
+  123      8  
+  124  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/Rakefile:
+    5  require File.expand_path('../config/application', __FILE__)
+    6  
+    7: Rottenpotatos::Application.load_tasks
+    8  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/application.rb:
+   10  end
+   11  
+   12: module Rottenpotatos
+   13    class Application < Rails::Application
+   14      # Settings in config/environments/* take precedence over those specified here.
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environment.rb:
+    3  
+    4  # Initialize the rails application
+    5: Rottenpotatos::Application.initialize!
+    6  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/Find Results:
+  247      4      2  
+  248      5      3  require ::File.expand_path('../config/environment',  __FILE__)
+  249:     6:     4: run Rottenpotatos::Application
+  250      7      5  
+  251      8  
+  ...
+  253     10      5  require File.expand_path('../config/application', __FILE__)
+  254     11      6  
+  255:    12:     7: Rottenpotatos::Application.load_tasks
+  256     13      8  
+  257     14  
+  258     15: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/submission_file.txt:
+  259:    16:     1: Rottenpotatos.herokuapp.com
+  260     17  
+  261     18: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/application.rb:
+  262     19     10  end
+  263     20     11  
+  264:    21:    12: module Rottenpotatos
+  265     22     13    class Application < Rails::Application
+  266     23     14      # Settings in config/environments/* take precedence over those specified here.
+  ...
+  269     26      3  
+  270     27      4  # Initialize the rails application
+  271:    28:     5: Rottenpotatos::Application.initialize!
+  272     29      6  
+  273     30  
+  ...
+  429  
+  430  /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/test.rb:
+  431:     1: Rottenpotatos::Application.configure do
+  432      2    # Settings specified here will take precedence over those in config/application.rb
+  433      3  
+  ...
+  436      5  # Make sure the secret is at least 30 characters and all random,
+  437      6  # no regular words or you'll be exposed to dictionary attacks.
+  438:     7: Rottenpotatos::Application.config.secret_token = 'b5443e7f76ac3d7ad7012eec7fb58109a05fdfbd141dcaabab874d1800eec9c5d682d9b7d53219a253c2da5456706ef82dc1a14ba836e1bb65c0811a2e8d3b72'
+  439      8  
+  440  
+  ...
+  442      1  # Be sure to restart your server when you modify this file.
+  443      2  
+  444:     3: Rottenpotatos::Application.config.session_store :cookie_store, key: '_smellybean_session'
+  445      4  
+  446      5  # Use the database for sessions instead of the cookie-based default,
+  447      6  # which shouldn't be used to store highly confidential information
+  448      7  # (create the session table with "rails generate session_migration")
+  449:     8: # Rottenpotatos::Application.config.session_store :active_record_store
+  450      9  
+  451  
+  ...
+  453      2  <html xmlns='http://www.w3.org/1999/xhtml'>
+  454      3    <head>
+  455:     4:     <title>Code coverage for Rottenpotatos</title>
+  456      5      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  457      6      <script src='./assets/0.9.0/application.js' type='text/javascript'></script>    
+
+15 matches across 6 files
+
+
+Searching 111 files for "Rottenpotatos"
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config.ru:
+    2  
+    3  require ::File.expand_path('../config/environment',  __FILE__)
+    4: run Smellybean::Application
+    5  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/Find Results:
+  120      5  require File.expand_path('../config/application', __FILE__)
+  121      6  
+  122:     7: Rottenpotatos::Application.load_tasks
+  123      8  
+  124  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/Rakefile:
+    5  require File.expand_path('../config/application', __FILE__)
+    6  
+    7: Rottenpotatos::Application.load_tasks
+    8  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/application.rb:
+   10  end
+   11  
+   12: module Rottenpotatos
+   13    class Application < Rails::Application
+   14      # Settings in config/environments/* take precedence over those specified here.
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environment.rb:
+    3  
+    4  # Initialize the rails application
+    5: Rottenpotatos::Application.initialize!
+    6  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/Find Results:
+  247      4      2  
+  248      5      3  require ::File.expand_path('../config/environment',  __FILE__)
+  249:     6:     4: run Rottenpotatos::Application
+  250      7      5  
+  251      8  
+  ...
+  253     10      5  require File.expand_path('../config/application', __FILE__)
+  254     11      6  
+  255:    12:     7: Rottenpotatos::Application.load_tasks
+  256     13      8  
+  257     14  
+  258     15: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/submission_file.txt:
+  259:    16:     1: Rottenpotatos.herokuapp.com
+  260     17  
+  261     18: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/application.rb:
+  262     19     10  end
+  263     20     11  
+  264:    21:    12: module Rottenpotatos
+  265     22     13    class Application < Rails::Application
+  266     23     14      # Settings in config/environments/* take precedence over those specified here.
+  ...
+  269     26      3  
+  270     27      4  # Initialize the rails application
+  271:    28:     5: Rottenpotatos::Application.initialize!
+  272     29      6  
+  273     30  
+  ...
+  429  
+  430  /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/test.rb:
+  431:     1: Rottenpotatos::Application.configure do
+  432      2    # Settings specified here will take precedence over those in config/application.rb
+  433      3  
+  ...
+  436      5  # Make sure the secret is at least 30 characters and all random,
+  437      6  # no regular words or you'll be exposed to dictionary attacks.
+  438:     7: Rottenpotatos::Application.config.secret_token = 'b5443e7f76ac3d7ad7012eec7fb58109a05fdfbd141dcaabab874d1800eec9c5d682d9b7d53219a253c2da5456706ef82dc1a14ba836e1bb65c0811a2e8d3b72'
+  439      8  
+  440  
+  ...
+  442      1  # Be sure to restart your server when you modify this file.
+  443      2  
+  444:     3: Rottenpotatos::Application.config.session_store :cookie_store, key: '_smellybean_session'
+  445      4  
+  446      5  # Use the database for sessions instead of the cookie-based default,
+  447      6  # which shouldn't be used to store highly confidential information
+  448      7  # (create the session table with "rails generate session_migration")
+  449:     8: # Rottenpotatos::Application.config.session_store :active_record_store
+  450      9  
+  451  
+  ...
+  453      2  <html xmlns='http://www.w3.org/1999/xhtml'>
+  454      3    <head>
+  455:     4:     <title>Code coverage for Rottenpotatos</title>
+  456      5      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  457      6      <script src='./assets/0.9.0/application.js' type='text/javascript'></script>    
+
+15 matches across 6 files

@@ -1,5 +1,6 @@
 Smellybean::Application.routes.draw do
   resources :movies
+  match'/movies/show_director/:id' => 'movies#show_director', :as => :show_director
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

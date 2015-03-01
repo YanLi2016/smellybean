@@ -1,0 +1,459 @@
+Searching 110 files for "smellybean"
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/Find Results:
+    1: Searching 109 files for "smellybean"
+    2  
+    3: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config.ru:
+    4      2  
+    5      3  require ::File.expand_path('../config/environment',  __FILE__)
+    6:     4: run Smellybean::Application
+    7      5  
+    8  
+    9: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/Rakefile:
+   10      5  require File.expand_path('../config/application', __FILE__)
+   11      6  
+   12:     7: Smellybean::Application.load_tasks
+   13      8  
+   14  
+   15: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/submission_file.txt:
+   16:     1: smellybean.herokuapp.com
+   17  
+   18: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/application.rb:
+   19     10  end
+   20     11  
+   21:    12: module Smellybean
+   22     13    class Application < Rails::Application
+   23     14      # Settings in config/environments/* take precedence over those specified here.
+   24  
+   25: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environment.rb:
+   26      3  
+   27      4  # Initialize the rails application
+   28:     5: Smellybean::Application.initialize!
+   29      6  
+   30  
+   31: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/routes.rb:
+   32:     1: Smellybean::Application.routes.draw do
+   33      2    resources :movies
+   34      3    match'/movies/show_director/:id' => 'movies#show_director', :as => :show_director
+   35  
+   36: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/development.rb:
+   37:     1: Smellybean::Application.configure do
+   38      2    # Settings specified here will take precedence over those in config/application.rb
+   39      3  
+   40  
+   41: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/production.rb:
+   42:     1: Smellybean::Application.configure do
+   43      2    # Settings specified here will take precedence over those in config/application.rb
+   44      3  
+   45  
+   46: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/test.rb:
+   47:     1: Smellybean::Application.configure do
+   48      2    # Settings specified here will take precedence over those in config/application.rb
+   49      3  
+   50  
+   51: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/initializers/secret_token.rb:
+   52      5  # Make sure the secret is at least 30 characters and all random,
+   53      6  # no regular words or you'll be exposed to dictionary attacks.
+   54:     7: Smellybean::Application.config.secret_token = 'b5443e7f76ac3d7ad7012eec7fb58109a05fdfbd141dcaabab874d1800eec9c5d682d9b7d53219a253c2da5456706ef82dc1a14ba836e1bb65c0811a2e8d3b72'
+   55      8  
+   56  
+   57: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/initializers/session_store.rb:
+   58      1  # Be sure to restart your server when you modify this file.
+   59      2  
+   60:     3: Smellybean::Application.config.session_store :cookie_store, key: '_smellybean_session'
+   61      4  
+   62      5  # Use the database for sessions instead of the cookie-based default,
+   63      6  # which shouldn't be used to store highly confidential information
+   64      7  # (create the session table with "rails generate session_migration")
+   65:     8: # Smellybean::Application.config.session_store :active_record_store
+   66      9  
+   67  
+   68: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/coverage/index.html:
+   69      2  <html xmlns='http://www.w3.org/1999/xhtml'>
+   70      3    <head>
+   71:     4:     <title>Code coverage for Smellybean</title>
+   72      5      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   73      6      <script src='./assets/0.9.0/application.js' type='text/javascript'></script>    
+   ..
+   78  Searching 109 files for "rotten"
+   79  
+   80: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/app/views/layouts/application.html.haml:
+   81      7  
+   82      8    %body
+   ..
+   85     11        - if flash[:notice]
+   86  
+   87: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/features/filter_movie_list.feature:
+   88     20    | Chicken Run             | G      | 21-Jun-2000  |
+   89     21  
+   ..
+   98     46    Then I should see "The Incredibles"
+   99  
+  100: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/features/sort_movie_list.feature:
+  101     20    | Chicken Run             | G      | 21-Jun-2000  |
+  102     21  
+  ...
+  105     24  Scenario: sort movies alphabetically
+  106  
+  107: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/features/support/paths.rb:
+  108     14      case page_name
+  109     15  
+  ...
+  115  
+  116  
+  117: Searching 109 files for "smellybean"
+  118  
+  119: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/Rakefile:
+  120      5  require File.expand_path('../config/application', __FILE__)
+  121      6  
+  ...
+  123      8  
+  124  
+  125: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/submission_file.txt:
+  126:     1: smellybean.herokuapp.com
+  127  
+  128: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/application.rb:
+  129     10  end
+  130     11  
+  131:    12: module Smellybean
+  132     13    class Application < Rails::Application
+  133     14      # Settings in config/environments/* take precedence over those specified here.
+  134  
+  135: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environment.rb:
+  136      3  
+  137      4  # Initialize the rails application
+  138:     5: Smellybean::Application.initialize!
+  139      6  
+  140  
+  141: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/routes.rb:
+  142:     1: Smellybean::Application.routes.draw do
+  143      2    resources :movies
+  144      3    match'/movies/show_director/:id' => 'movies#show_director', :as => :show_director
+  145  
+  146: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/development.rb:
+  147:     1: Smellybean::Application.configure do
+  148      2    # Settings specified here will take precedence over those in config/application.rb
+  149      3  
+  150  
+  151: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/production.rb:
+  152:     1: Smellybean::Application.configure do
+  153      2    # Settings specified here will take precedence over those in config/application.rb
+  154      3  
+  155  
+  156: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/test.rb:
+  157:     1: Smellybean::Application.configure do
+  158      2    # Settings specified here will take precedence over those in config/application.rb
+  159      3  
+  160  
+  161: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/initializers/secret_token.rb:
+  162      5  # Make sure the secret is at least 30 characters and all random,
+  163      6  # no regular words or you'll be exposed to dictionary attacks.
+  164:     7: Smellybean::Application.config.secret_token = 'b5443e7f76ac3d7ad7012eec7fb58109a05fdfbd141dcaabab874d1800eec9c5d682d9b7d53219a253c2da5456706ef82dc1a14ba836e1bb65c0811a2e8d3b72'
+  165      8  
+  166  
+  167: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/initializers/session_store.rb:
+  168      1  # Be sure to restart your server when you modify this file.
+  169      2  
+  170:     3: Smellybean::Application.config.session_store :cookie_store, key: '_smellybean_session'
+  171      4  
+  172      5  # Use the database for sessions instead of the cookie-based default,
+  173      6  # which shouldn't be used to store highly confidential information
+  174      7  # (create the session table with "rails generate session_migration")
+  175:     8: # Smellybean::Application.config.session_store :active_record_store
+  176      9  
+  177  
+  178: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/coverage/index.html:
+  179      2  <html xmlns='http://www.w3.org/1999/xhtml'>
+  180      3    <head>
+  181:     4:     <title>Code coverage for Smellybean</title>
+  182      5      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  183      6      <script src='./assets/0.9.0/application.js' type='text/javascript'></script>    
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/Rakefile:
+    5  require File.expand_path('../config/application', __FILE__)
+    6  
+    7: Smellybean::Application.load_tasks
+    8  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/submission_file.txt:
+    1: smellybean.herokuapp.com
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/application.rb:
+   10  end
+   11  
+   12: module Smellybean
+   13    class Application < Rails::Application
+   14      # Settings in config/environments/* take precedence over those specified here.
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environment.rb:
+    3  
+    4  # Initialize the rails application
+    5: Smellybean::Application.initialize!
+    6  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/routes.rb:
+    1: Smellybean::Application.routes.draw do
+    2    resources :movies
+    3    match'/movies/show_director/:id' => 'movies#show_director', :as => :show_director
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/development.rb:
+    1: Smellybean::Application.configure do
+    2    # Settings specified here will take precedence over those in config/application.rb
+    3  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/production.rb:
+    1: Smellybean::Application.configure do
+    2    # Settings specified here will take precedence over those in config/application.rb
+    3  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/test.rb:
+    1: Smellybean::Application.configure do
+    2    # Settings specified here will take precedence over those in config/application.rb
+    3  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/initializers/secret_token.rb:
+    5  # Make sure the secret is at least 30 characters and all random,
+    6  # no regular words or you'll be exposed to dictionary attacks.
+    7: Smellybean::Application.config.secret_token = 'b5443e7f76ac3d7ad7012eec7fb58109a05fdfbd141dcaabab874d1800eec9c5d682d9b7d53219a253c2da5456706ef82dc1a14ba836e1bb65c0811a2e8d3b72'
+    8  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/initializers/session_store.rb:
+    1  # Be sure to restart your server when you modify this file.
+    2  
+    3: Smellybean::Application.config.session_store :cookie_store, key: '_smellybean_session'
+    4  
+    5  # Use the database for sessions instead of the cookie-based default,
+    6  # which shouldn't be used to store highly confidential information
+    7  # (create the session table with "rails generate session_migration")
+    8: # Smellybean::Application.config.session_store :active_record_store
+    9  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/coverage/index.html:
+    2  <html xmlns='http://www.w3.org/1999/xhtml'>
+    3    <head>
+    4:     <title>Code coverage for Smellybean</title>
+    5      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    6      <script src='./assets/0.9.0/application.js' type='text/javascript'></script>    
+
+68 matches across 12 files
+
+
+Searching 110 files for "smellybean"
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/Find Results:
+    1: Searching 109 files for "smellybean"
+    2  
+    3: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config.ru:
+    4      2  
+    5      3  require ::File.expand_path('../config/environment',  __FILE__)
+    6:     4: run Rottenpotatos::Application
+    7      5  
+    8  
+    9: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/Rakefile:
+   10      5  require File.expand_path('../config/application', __FILE__)
+   11      6  
+   12:     7: Rottenpotatos::Application.load_tasks
+   13      8  
+   14  
+   15: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/submission_file.txt:
+   16:     1: Rottenpotatos.herokuapp.com
+   17  
+   18: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/application.rb:
+   19     10  end
+   20     11  
+   21:    12: module Rottenpotatos
+   22     13    class Application < Rails::Application
+   23     14      # Settings in config/environments/* take precedence over those specified here.
+   24  
+   25: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environment.rb:
+   26      3  
+   27      4  # Initialize the rails application
+   28:     5: Rottenpotatos::Application.initialize!
+   29      6  
+   30  
+   31: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/routes.rb:
+   32:     1: Smellybean::Application.routes.draw do
+   33      2    resources :movies
+   34      3    match'/movies/show_director/:id' => 'movies#show_director', :as => :show_director
+   35  
+   36: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/development.rb:
+   37:     1: Smellybean::Application.configure do
+   38      2    # Settings specified here will take precedence over those in config/application.rb
+   39      3  
+   40  
+   41: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/production.rb:
+   42:     1: Smellybean::Application.configure do
+   43      2    # Settings specified here will take precedence over those in config/application.rb
+   44      3  
+   45  
+   46: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/test.rb:
+   47:     1: Smellybean::Application.configure do
+   48      2    # Settings specified here will take precedence over those in config/application.rb
+   49      3  
+   50  
+   51: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/initializers/secret_token.rb:
+   52      5  # Make sure the secret is at least 30 characters and all random,
+   53      6  # no regular words or you'll be exposed to dictionary attacks.
+   54:     7: Smellybean::Application.config.secret_token = 'b5443e7f76ac3d7ad7012eec7fb58109a05fdfbd141dcaabab874d1800eec9c5d682d9b7d53219a253c2da5456706ef82dc1a14ba836e1bb65c0811a2e8d3b72'
+   55      8  
+   56  
+   57: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/initializers/session_store.rb:
+   58      1  # Be sure to restart your server when you modify this file.
+   59      2  
+   60:     3: Smellybean::Application.config.session_store :cookie_store, key: '_smellybean_session'
+   61      4  
+   62      5  # Use the database for sessions instead of the cookie-based default,
+   63      6  # which shouldn't be used to store highly confidential information
+   64      7  # (create the session table with "rails generate session_migration")
+   65:     8: # Smellybean::Application.config.session_store :active_record_store
+   66      9  
+   67  
+   68: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/coverage/index.html:
+   69      2  <html xmlns='http://www.w3.org/1999/xhtml'>
+   70      3    <head>
+   71:     4:     <title>Code coverage for Smellybean</title>
+   72      5      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   73      6      <script src='./assets/0.9.0/application.js' type='text/javascript'></script>    
+   ..
+   78  Searching 109 files for "rotten"
+   79  
+   80: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/app/views/layouts/application.html.haml:
+   81      7  
+   82      8    %body
+   ..
+   85     11        - if flash[:notice]
+   86  
+   87: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/features/filter_movie_list.feature:
+   88     20    | Chicken Run             | G      | 21-Jun-2000  |
+   89     21  
+   ..
+   98     46    Then I should see "The Incredibles"
+   99  
+  100: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/features/sort_movie_list.feature:
+  101     20    | Chicken Run             | G      | 21-Jun-2000  |
+  102     21  
+  ...
+  105     24  Scenario: sort movies alphabetically
+  106  
+  107: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/features/support/paths.rb:
+  108     14      case page_name
+  109     15  
+  ...
+  115  
+  116  
+  117: Searching 109 files for "smellybean"
+  118  
+  119: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/Rakefile:
+  120      5  require File.expand_path('../config/application', __FILE__)
+  121      6  
+  ...
+  123      8  
+  124  
+  125: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/submission_file.txt:
+  126:     1: smellybean.herokuapp.com
+  127  
+  128: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/application.rb:
+  129     10  end
+  130     11  
+  131:    12: module Smellybean
+  132     13    class Application < Rails::Application
+  133     14      # Settings in config/environments/* take precedence over those specified here.
+  134  
+  135: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environment.rb:
+  136      3  
+  137      4  # Initialize the rails application
+  138:     5: Smellybean::Application.initialize!
+  139      6  
+  140  
+  141: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/routes.rb:
+  142:     1: Smellybean::Application.routes.draw do
+  143      2    resources :movies
+  144      3    match'/movies/show_director/:id' => 'movies#show_director', :as => :show_director
+  145  
+  146: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/development.rb:
+  147:     1: Smellybean::Application.configure do
+  148      2    # Settings specified here will take precedence over those in config/application.rb
+  149      3  
+  150  
+  151: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/production.rb:
+  152:     1: Smellybean::Application.configure do
+  153      2    # Settings specified here will take precedence over those in config/application.rb
+  154      3  
+  155  
+  156: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/test.rb:
+  157:     1: Smellybean::Application.configure do
+  158      2    # Settings specified here will take precedence over those in config/application.rb
+  159      3  
+  160  
+  161: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/initializers/secret_token.rb:
+  162      5  # Make sure the secret is at least 30 characters and all random,
+  163      6  # no regular words or you'll be exposed to dictionary attacks.
+  164:     7: Smellybean::Application.config.secret_token = 'b5443e7f76ac3d7ad7012eec7fb58109a05fdfbd141dcaabab874d1800eec9c5d682d9b7d53219a253c2da5456706ef82dc1a14ba836e1bb65c0811a2e8d3b72'
+  165      8  
+  166  
+  167: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/initializers/session_store.rb:
+  168      1  # Be sure to restart your server when you modify this file.
+  169      2  
+  170:     3: Smellybean::Application.config.session_store :cookie_store, key: '_smellybean_session'
+  171      4  
+  172      5  # Use the database for sessions instead of the cookie-based default,
+  173      6  # which shouldn't be used to store highly confidential information
+  174      7  # (create the session table with "rails generate session_migration")
+  175:     8: # Smellybean::Application.config.session_store :active_record_store
+  176      9  
+  177  
+  178: /Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/coverage/index.html:
+  179      2  <html xmlns='http://www.w3.org/1999/xhtml'>
+  180      3    <head>
+  181:     4:     <title>Code coverage for Smellybean</title>
+  182      5      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  183      6      <script src='./assets/0.9.0/application.js' type='text/javascript'></script>    
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/submission_file.txt:
+    1: smellybean.herokuapp.com
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/routes.rb:
+    1: Smellybean::Application.routes.draw do
+    2    resources :movies
+    3    match'/movies/show_director/:id' => 'movies#show_director', :as => :show_director
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/development.rb:
+    1: Smellybean::Application.configure do
+    2    # Settings specified here will take precedence over those in config/application.rb
+    3  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/production.rb:
+    1: Smellybean::Application.configure do
+    2    # Settings specified here will take precedence over those in config/application.rb
+    3  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/environments/test.rb:
+    1: Rottenpotatos::Application.configure do
+    2    # Settings specified here will take precedence over those in config/application.rb
+    3  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/initializers/secret_token.rb:
+    5  # Make sure the secret is at least 30 characters and all random,
+    6  # no regular words or you'll be exposed to dictionary attacks.
+    7: Rottenpotatos::Application.config.secret_token = 'b5443e7f76ac3d7ad7012eec7fb58109a05fdfbd141dcaabab874d1800eec9c5d682d9b7d53219a253c2da5456706ef82dc1a14ba836e1bb65c0811a2e8d3b72'
+    8  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/config/initializers/session_store.rb:
+    1  # Be sure to restart your server when you modify this file.
+    2  
+    3: Rottenpotatos::Application.config.session_store :cookie_store, key: '_smellybean_session'
+    4  
+    5  # Use the database for sessions instead of the cookie-based default,
+    6  # which shouldn't be used to store highly confidential information
+    7  # (create the session table with "rails generate session_migration")
+    8: # Rottenpotatos::Application.config.session_store :active_record_store
+    9  
+
+/Users/YanLi/Google Drive/2015 Spring/cs169/hw2-rails-intro/smellybean/coverage/index.html:
+    2  <html xmlns='http://www.w3.org/1999/xhtml'>
+    3    <head>
+    4:     <title>Code coverage for Rottenpotatos</title>
+    5      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    6      <script src='./assets/0.9.0/application.js' type='text/javascript'></script>    
+
+65 matches across 9 files
